@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  root "projects#index"
+
+  resources :projects #resources provides 4 RESTful routes: /projects /projects/new /projects/:id /projects/:id/edit
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
