@@ -6,3 +6,6 @@
 				project_path(@project),
 				method: :delete,
 				data: {confirm: "Are you sure you want to delete?"} )%>
+
+<!-- Use nested routing helper: new_project_ticket_path -->
+<%= link_to("New Ticket", new_project_ticket_path(@project)) %>
